@@ -3,12 +3,13 @@ body {
 }
 
 .header__background {
-  position: absolute;
+  position:absolute;
   width: 100%;
   height: 100%;
   background-image: url("images/header.jpg");
   background-size: cover;
-}
+    background-position: center center;
+} 
 
 .header__line {
   position: relative;
