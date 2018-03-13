@@ -3,11 +3,10 @@ body {
 }
 
 .carousel-inner{
-  width:100%;
+  
+    width:100%;
   max-height: 70vh !important;   
 }
-
-
 
 .navbar__item {
   margin-right: 10px;
@@ -87,8 +86,25 @@ font-weight: 700;
 }
 
 
+.albumauswahl{
+    padding-top: 40px;
+    text-align: center;
+}
 
+.albumauswahl{
+    font-weight: bold;
+}
 
+.albumSelect {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.albumSelect:hover {   
+    color: #0066cc;
+    text-decoration: none;
+}
 
 
 
