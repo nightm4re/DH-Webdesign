@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
   font-family: "Azo Sans";
   src: url("C:\Windows\Fonts");
@@ -7,7 +6,7 @@
 
 html, body {
   height: 100%;
-  background-color: black;  
+  background-color: black;
   overflow-x: hidden;
 }
 
@@ -21,32 +20,6 @@ html, body {
   background-position: center;
 }
 
-=======
-body {
-  background-color: gray;
-}
-
-.header__background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("images/header.jpg");
-  background-size: cover;
-}
-
-.header__line {
-  position: relative;
-  top: 210px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: rgba(0,0, 0, 0.65);
-  box-shadow: 0px 0px 41px 2px #000000c4;
-  width: 75%;
-  height: 40px;
-  text-align: center;
-  padding: 5px;
-}
->>>>>>> 379f82634e9b737f079c394d14519cc441f7ad07
 
 .navbar__item {
   margin-right: 10px;
@@ -57,7 +30,6 @@ body {
   width: 160px;
   height: 32px;
   text-align: center;
-<<<<<<< HEAD
   font-family: "Azo Sans";
   font-weight: lighter;
   color: white !important;
@@ -92,16 +64,6 @@ body {
 }
 
 .navbar__button--ueberuns::after {
-=======
-  font-family: "Century Gothic";
-  color: white !important;
-  font-size: 11pt;
-  text-transform: uppercase;
-  padding: 5px;
-}
-
-.navbar__button::after {
->>>>>>> 379f82634e9b737f079c394d14519cc441f7ad07
   content: '';
   position: absolute;
   width: 160px;
@@ -114,13 +76,10 @@ body {
   box-shadow: 2px 2px 5px 1px #000000ab;
 }
 
-<<<<<<< HEAD
 .navbar__button--ueberuns:hover {
   color: #0066cc !important;
 }
 
-=======
->>>>>>> 379f82634e9b737f079c394d14519cc441f7ad07
 .navbar__button:hover::after {
   background-color: #0066cc;
 }
@@ -130,7 +89,6 @@ body {
 }
 
 .navbar__button--right::after {
-<<<<<<< HEAD
   content:'';
   transform: skew(-45deg);
 }
@@ -145,11 +103,6 @@ body {
   color: #0066cc !important;
 }
 
-=======
-  transform: skew(-45deg);
-}
-
->>>>>>> 379f82634e9b737f079c394d14519cc441f7ad07
 .navbar__logo {
   height: 105px;
   padding-left: 35px;
@@ -157,7 +110,6 @@ body {
   filter: drop-shadow(2px 2px 5px 1px #000000ab);
 }
 
-<<<<<<< HEAD
 .blackline {
   background-color: black;
   height: 25px;
@@ -308,11 +260,11 @@ test {
   width: 7px;
   background-color: rgba(0,0, 0, 0.9);
   height: 100%;
-  position: absolute; 
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 119px;
 }
 
@@ -329,5 +281,3 @@ test {
 @media only screen and (max-width: 992px){
   .max992 {display:none}
 }
-=======
->>>>>>> 379f82634e9b737f079c394d14519cc441f7ad07
