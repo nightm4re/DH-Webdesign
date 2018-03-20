@@ -224,7 +224,39 @@ nav {
 }
 
 .bg-gradient {
-  
   color: beige;
   background: beige;
+}
+
+
+
+.motto {
+    text-align: center;
+    
+}
+
+.motto__grid {
+    color: black;
+    background-color: beige;;
+  font-size: 20pt;
+  font-family: 'Azo Sans';
+    width: 100%;
+}
+
+.left__col {
+    background-color: #000000;
+    transform-origin: bottom left;
+    -ms-transform: skew(45deg, 0deg);
+    -webkit-transform: skew(45deg, 0deg);
+    transform: skew(45deg, 0deg);
+}
+
+.right__col {
+   background-color: black;
+}
+
+
+
+footer {
+    background-color: black;
 }
