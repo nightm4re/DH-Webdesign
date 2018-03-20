@@ -210,17 +210,27 @@ nav {
 }
 
 
-
-
 .category__selection1 {
     font-weight: bold;
     text-decoration: none;
     color: #0066cc;
 }
 
-.category__selection2, .category__selection2:hover {
+.category__selection1:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.category__selection2 {
     text-decoration: none;
     color: white;
+}
+
+.category__selection2:hover {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
 }
 
 .bg-gradient {
@@ -229,34 +239,26 @@ nav {
 }
 
 
+.footer {
+    background-color: black;
+    color: white;
+}
 
-.motto {
+.get__social {
+    color: white;
+    font-weight: bold;
+    font-family: 'Azo Sans';
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.social__channels {
     text-align: center;
     
 }
 
-.motto__grid {
-    color: black;
-    background-color: beige;;
-  font-size: 20pt;
-  font-family: 'Azo Sans';
-    width: 100%;
-}
-
-.left__col {
-    background-color: #000000;
-    transform-origin: bottom left;
-    -ms-transform: skew(45deg, 0deg);
-    -webkit-transform: skew(45deg, 0deg);
-    transform: skew(45deg, 0deg);
-}
-
-.right__col {
-   background-color: black;
-}
-
-
-
-footer {
-    background-color: black;
+.social__channels i {
+    margin: 10px;
+    color: white;
 }
