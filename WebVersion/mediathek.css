@@ -2,6 +2,7 @@
 
 body {
   background-color:beige;
+    font-family: 'Azo Sans' !important;
 }
 
 nav {
@@ -276,4 +277,8 @@ nav {
     color: #0066cc;
     text-decoration: none;
     font-weight: bold;
+}
+
+.copyright{
+    text-align: center;
 }
