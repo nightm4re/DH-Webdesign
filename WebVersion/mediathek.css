@@ -262,3 +262,18 @@ nav {
     margin: 10px;
     color: white;
 }
+
+.footer__contact {
+    margin: 0 auto;
+}
+
+.footer__buttons {
+    color: white;
+    
+}
+
+.footer__buttons:hover {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
