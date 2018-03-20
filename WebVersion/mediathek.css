@@ -264,6 +264,11 @@ nav {
     color: white;
 }
 
+.social__channels i:hover {
+    
+    color: #0066cc;
+}
+
 .footer__contact {
     margin: 0 auto;
 }
@@ -281,4 +286,30 @@ nav {
 
 .copyright{
     text-align: center;
+}
+
+.text-white:hover {
+    color: #0066cc !important;
+    font-weight: bold;
+}
+
+.category__selection_video1 {
+    color: white;
+}
+
+.category__selection_video1:hover {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.category__selection_video2 {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.category__selection_video2:hover {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
 }
