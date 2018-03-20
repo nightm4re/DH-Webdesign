@@ -216,9 +216,9 @@ html, body {
   height: auto;
 }
 
-test {
-  width: 66%;
-  padding-top: 100px !important;
+.test {
+  padding-top: 75px !important;
+  padding-bottom: 75px !important;
 }
 
 .jahreszahl {
@@ -259,7 +259,7 @@ test {
 .historyline {
   width: 7px;
   background-color: rgba(0,0, 0, 0.9);
-  height: 100%;
+  height: 950px;
   position: absolute;
   left: 0;
   right: 0;
@@ -268,16 +268,84 @@ test {
   margin-top: 119px;
 }
 
-
 .links {
   margin-left: 6px !important;
 }
 
 .rechts {
-  margin-right: 6px !important;
+  margin-right: 7px !important;
 }
+
+.foerdernde-mitglieder {
+  padding-top: 75px !important;
+  width: 66%;
+}
+
+.fmitglied {
+  height: 170px;
+  width: 170px;
+  display: inline-block;
+  background-image: url("images/UeberUns/membereffekt.png");
+  background-size: contain;
+}
+
+.fmitglied:hover {
+  height: 170px;
+  width: 170px;
+  display: inline-block;
+  background-image: url("images/UeberUns/member.png");
+  background-size: contain;
+  cursor: pointer;
+}
+
 
 /*@wCssFragment{class:mediaquerySize;variant:max768;caption:wenn die Fensterbreite kleiner gleich 768 Pixel ist;caption-en:if window width is equal or less 768 pixel} */
 @media only screen and (max-width: 992px){
   .max992 {display:none}
+}
+
+.leftArrow {
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  background-color: white;
+  color: #0066cc;
+  font-family: "Azo Sans";
+  font-weight: bold;
+  height: 35px;
+  width: 35px;
+  border: 1px solid transparent;
+}
+
+.leftArrow:hover {
+  cursor: pointer;
+}
+
+.rightArrow {
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+}
+
+.rightArrow:hover {
+  cursor: pointer;
+}
+
+.arrow--left {
+  float: left;
+}
+
+.arrow--right {
+  float: right;
+}
+
+.fm {
+  width: 100%;
+  background-image: url("images/UeberUns/membereffekt.png");
+
+}
+
+.fm:hover {
+  opacity: 0;
+  background-image: url("images/UeberUns/member.png");
 }
