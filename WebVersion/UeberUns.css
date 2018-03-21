@@ -278,6 +278,7 @@ html, body {
 
 .foerdernde-mitglieder {
   padding-top: 75px !important;
+  padding-bottom: 75px !important;
   width: 66%;
 }
 
@@ -338,3 +339,65 @@ html, body {
   display: inline-block;
 }
 
+
+/* footer */
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.get__social {
+  color: white;
+  font-weight: bold;
+  font-family: 'Azo Sans';
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.social__channels {
+  text-align: center;
+
+}
+
+.social__channels i {
+  margin: 10px;
+  color: white;
+}
+
+.social__channels i:hover {
+
+  color: #0066cc;
+}
+
+.footer__contact {
+  margin: 0 auto;
+}
+
+.footer__buttons {
+  color: white;
+  text-align: center;
+
+}
+
+.footer__buttons:hover {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.copyright{
+  text-align: center;
+}
+
+.text-white {
+  text-align: center;
+}
+
+.text-white:hover {
+  color: #0066cc !important;
+  font-weight: bold;
+  text-decoration: none !important;
+
+}
