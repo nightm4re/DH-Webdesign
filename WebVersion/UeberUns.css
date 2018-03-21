@@ -282,20 +282,20 @@ html, body {
 }
 
 .fmitglied {
-  height: 170px;
-  width: 170px;
+  height: 200px;
+  width: 200px;
   display: inline-block;
-  background-image: url("images/UeberUns/membereffekt.png");
+  background-image: url("images/UeberUns/memberschlagschatten.png");
   background-size: contain;
+  position: relative;
 }
 
 .fmitglied:hover {
-  height: 170px;
-  width: 170px;
+  height: 200px;
+  width: 200px;
   display: inline-block;
-  background-image: url("images/UeberUns/member.png");
+  background-image: url("images/UeberUns/memberhover.png");
   background-size: contain;
-  cursor: pointer;
 }
 
 
@@ -305,15 +305,6 @@ html, body {
 }
 
 .leftArrow {
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
-  background-color: white;
-  color: #0066cc;
-  font-family: "Azo Sans";
-  font-weight: bold;
-  height: 35px;
-  width: 35px;
   border: 1px solid transparent;
 }
 
@@ -321,31 +312,29 @@ html, body {
   cursor: pointer;
 }
 
-.rightArrow {
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
-}
-
-.rightArrow:hover {
-  cursor: pointer;
-}
-
-.arrow--left {
-  float: left;
-}
-
-.arrow--right {
-  float: right;
+.arrow {
+  width: 5%;
+  padding: 5px;
 }
 
 .fm {
+  width: 90%;
+  padding: 5px !important;
+}
+
+.membertext {
+  color: white;
+  font-size: 15pt;
+  position: absolute;
+  display: inline-block;
+  height: 100%;
   width: 100%;
-  background-image: url("images/UeberUns/membereffekt.png");
-
-}
-
-.fm:hover {
+  text-align: center;
   opacity: 0;
-  background-image: url("images/UeberUns/member.png");
 }
+
+.membertext:hover {
+  opacity: 1;
+  display: inline-block;
+}
+

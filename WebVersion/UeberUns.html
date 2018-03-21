@@ -122,25 +122,31 @@
 
 
     <div class="container foerdernde-mitglieder">
-        <div class="arrow--left">
-            <input type="button" id="left-button" class="leftArrow" value="<">
-        </div>
-      <div id="outer">
-        <div id="inner">
-          <div class="fmitglied"></div>
-          <div class="fmitglied"></div>
-          <div class="fmitglied"></div>
-          <div class="fmitglied"></div>
-          <div class="fmitglied"></div>
-          <div class="fmitglied"></div>
-          <div class="fmitglied"></div>
-          <div class="fmitglied"></div>
-          <div class="fmitglied"></div>
-        </div>
-     </div>
-     <div class="arrow--right">
-        <input type="button" id="right-button" class="rightArrow" value="right">
-       </div>
+        <div class="row align-items-center">
+            <div class="col arrow">
+            <input type="image" id="left-button" class="leftArrow" src="Images/Ueberuns/arrowleft.png">
+            </div>
+            <div class="col fm no-gutters">
+                <div id="outer">
+                    <div id="inner">
+                      <div class="fmitglied">
+                        <div class="membertext">Max Mustermann<br><br>Dude</div>
+                      </div>
+                      <div class="fmitglied"></div>
+                      <div class="fmitglied"></div>
+                      <div class="fmitglied"></div>
+                      <div class="fmitglied"></div>
+                      <div class="fmitglied"></div>
+                      <div class="fmitglied"></div>
+                      <div class="fmitglied"></div>
+                      <div class="fmitglied"></div>
+                    </div>
+                 </div>
+            </div>
+            <div class="col arrow">
+              <input type="image" id="right-button" class="leftArrow" src="Images/Ueberuns/arrowright.png">
+            </div>
+          </div>
      </div>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
      <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
@@ -151,12 +157,12 @@
 
            $('#right-button').click(function () {
               var leftPos = outer.scrollLeft();
-              outer.animate({ scrollLeft: leftPos + 170 });
+              outer.animate({ scrollLeft: leftPos + 205 });
            });
 
            $('#left-button').click(function () {
               var leftPos = outer.scrollLeft();
-              outer.animate({ scrollLeft: leftPos - 170 });
+              outer.animate({ scrollLeft: leftPos - 205 });
             });
         });
      </script>
