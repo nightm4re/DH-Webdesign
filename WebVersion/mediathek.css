@@ -234,10 +234,7 @@ nav {
     font-weight: bold;
 }
 
-.bg-gradient {
-  color: beige;
-  background: beige;
-}
+
 
 
 .footer {
@@ -325,4 +322,9 @@ nav {
     padding-bottom: 40px;
     display: flex;
     justify-content: center;
+}
+
+.lightbox-gallery {
+    padding-top: 50px;
+    width: 66%;
 }

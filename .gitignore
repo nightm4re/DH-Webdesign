@@ -1,2 +1,12 @@
 
 WebVersion/mediathek.html
+*.jpg
+WebVersion/karma.conf.js
+WebVersion/Images/bedburg/Thumbs.db
+WebVersion/dist/images/close.png
+*.js
+*.png
+WebVersion/dist/images/loading.gif
+*.css
+*.map
+*.db
