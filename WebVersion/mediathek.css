@@ -326,5 +326,13 @@ nav {
 
 .lightbox-gallery {
     padding-top: 50px;
-    width: 66%;
+    padding-bottom: 50px;
+}
+
+.example-image {
+    margin: 10px;
+}
+
+.heading {
+    padding-top: 60px;
 }
