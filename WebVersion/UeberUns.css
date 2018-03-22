@@ -6,18 +6,34 @@
 
 html, body {
   height: 100%;
-  background-color: black;
   overflow-x: hidden;
 }
+
+.testi {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  position: absolute !important;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+
 
 .header__background {
 
   width: 100%;
+  position: relative;
   height: 500px;
   background-image: url("images/UeberUns/ueberuns-header.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 0;
 }
 
 
