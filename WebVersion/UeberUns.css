@@ -341,14 +341,15 @@ html, body {
 
 .membertext {
   color: white;
-  font-size: 15pt;
+  font-size: 13pt;
   position: absolute;
   display: inline-block;
   height: 100%;
   width: 100%;
-  top: 33%;
+  padding-top: 35%;
   text-align: center;
   opacity: 0;
+  line-height: 1.75;
 }
 
 .membertext:hover {
@@ -417,4 +418,47 @@ html, body {
   font-weight: bold;
   text-decoration: none !important;
 
+}
+
+.oneband {
+  height: 25px;
+  position: relative;
+  padding: 0 !important;
+}
+
+
+.onesound {
+  text-align: center;
+  color: black;
+  background-color: white;
+  position: absolute;
+  font-size: 20pt;
+  font-family: 'Azo Sans';
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  line-height: 1.25;
+  padding: 0 !important;
+  z-index: 0;
+}
+
+.rechteecke {
+  left: 66%;
+  background-color: black;
+  position: absolute;
+  height: 25px;
+  z-index: 1;
+  width: 100%;
+  transform: skew(-45deg);
+}
+
+.linkeecke {
+  right: 66%;
+  background-color: black;
+  position: absolute;
+  height: 25px;
+  z-index: 1;
+  width: 100%;
+  transform: skew(45deg);
 }
