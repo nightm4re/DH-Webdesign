@@ -367,10 +367,11 @@ html, body {
 
 .get__social {
   color: white;
-  font-weight: bold;
   font-family: 'Azo Sans';
-  font-size: 20px;
+  font-size: 13pt;
   text-align: center;
+  letter-spacing: 0.15em;
+  padding-top: 20px;
 }
 
 
@@ -461,4 +462,78 @@ html, body {
   z-index: 1;
   width: 100%;
   transform: skew(45deg);
+}
+
+.Akteure {
+  color: white;
+  font-family: "Century Gothic";
+  font-size: 11pt;
+  text-align: center;
+}
+
+.name {
+  color: white;
+  font-family: "Azo Sans";
+  font-size: 21pt;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding-bottom: 20px;
+}
+
+.beschreibungstext {
+  color: white;
+  font-family: "Century Gothic";
+  text-align: center;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 11pt;
+}
+
+.zitat {
+  color: white;
+  font-family: "Azo Sans";
+  text-align: center;
+  font-size: 14pt;
+  padding-top: 20px;
+}
+
+.akteurauswahl {
+  width: 1160px;
+  background-image: url("Images/Ueberuns/akteure.png");
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.member {
+  width: 145px;
+  height: 187px;
+  position: relative;
+}
+
+.memberhover {
+  height: 157px;
+  width: 145px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #0066cc;
+  opacity: 0;
+  position: absolute;
+  color: white;
+  font-family: "Azo Sans";
+  font-size: 12pt;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 45%;
+}
+
+.memberhover:hover {
+  opacity: 0.8;
+}
+
+.memberimage {
+  position: absolute;
 }
