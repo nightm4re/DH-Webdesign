@@ -129,7 +129,7 @@ html, body {
 /* Überschriften */
 .blackline {
   background-color: #171717;
-  height: 25px;
+  height: 20px;
   box-shadow: 2px 2px 5px 1px #000000ab;
   width: 100%;
   padding-right: 0px !important;
@@ -138,7 +138,7 @@ html, body {
 
 .whiteline {
   background-color: #ECEAEA;
-  height: 25px;
+  height: 20px;
   width: 100%;
   padding-right: 0px !important;
   padding-left: 0px !important;
@@ -146,16 +146,16 @@ html, body {
 
 .headline {
   color: #ECEAEA !important;
-  font-size: 20pt;
+  font-size: 17pt;
   font-family: 'Quicksand';
   text-align: right;
   position: relative;
   top: 0;
   bottom: 0;
   padding-right: 12px;
-  line-height: 1;
-  right: 33%;
-  height: 25px;
+  line-height: 0.8em;
+  right: 15%;
+  height: 20px;
   z-index: 0;
 }
 
@@ -166,7 +166,7 @@ html, body {
   top: 0;
   bottom: 0;
   right: 0;
-  height: 25px;
+  height: 20px;
   background-color: #171717;
   box-shadow: 2px 2px 5px 1px #000000ab;
   z-index: -1;
@@ -174,16 +174,16 @@ html, body {
 
 .headline--black {
   color: #171717 !important;
-  font-size: 20pt;
+  font-size: 17pt;
   font-family: 'Azo Sans';
   text-align: left;
   position: relative;
   top: 0;
   bottom: 0;
   padding-left: 12px;
-  line-height: 1.25;
-  left: 33%;
-  height: 25px;
+  line-height: 1.05;
+  left: 15%;
+  height: 20px;
   z-index: 0;
 }
 
@@ -194,7 +194,7 @@ html, body {
   top: 0;
   bottom: 0;
   left: 0;
-  height: 25px;
+  height: 20px;
   background-color: #ECEAEA;
   z-index: -1;
 }
@@ -295,7 +295,7 @@ html, body {
 .historyline {
   width: 7px;
   background-color: rgba(0,0, 0, 0.9);
-  height: 940px;
+  height: 930px;
   position: absolute;
   left: 0;
   right: 0;
@@ -312,11 +312,12 @@ html, body {
   margin-right: 7px !important;
 }
 
+
 /* Fördernde Mitglieder Bereich */
 .foerdernde-mitglieder {
-  padding-top: 75px !important;
-  padding-bottom: 75px !important;
-  width: 66%;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  width: 90%;
 }
 
 .fmitglied {
@@ -351,12 +352,12 @@ html, body {
 }
 
 .arrow {
-  width: 5%;
+  width: 10%;
   padding: 5px;
 }
 
 .fm {
-  width: 90%;
+  width: 80%;
   padding: 5px !important;
 }
 
@@ -382,7 +383,7 @@ html, body {
 /* footer */
 
 .footer {
-  background-color: black;
+  background-color: #171717;
   color: white;
 }
 
@@ -413,6 +414,7 @@ html, body {
 
 .footer__contact {
   margin: 0 auto;
+  width: 90%;
 }
 
 .footer__buttons {
@@ -451,22 +453,22 @@ html, body {
 
 .onesound {
   text-align: center;
-  color: black;
-  background-color: white;
+  color: #171717;
+  background-color: #ECEAEA;
   position: absolute;
-  font-size: 20pt;
+  font-size: 18pt;
   font-family: 'Azo Sans';
   top: 0;
   bottom: 0;
   height: 100%;
   width: 100%;
-  line-height: 1.25;
+  line-height: 1.3em;
   padding: 0 !important;
   z-index: 0;
 }
 
 .rechteecke {
-  left: 66%;
+  left: 93%;
   background-color: #171717;
   position: absolute;
   height: 25px;
@@ -476,7 +478,7 @@ html, body {
 }
 
 .linkeecke {
-  right: 66%;
+  right: 93%;
   background-color: #171717;
   position: absolute;
   height: 25px;
@@ -498,17 +500,18 @@ html, body {
   font-size: 21pt;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  padding-top: 20px;
   padding-bottom: 20px;
+  letter-spacing: 0.1em;
 }
 
 .beschreibungstext {
   color: white;
   font-family: "Quicksand";
-  text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 20px;
+  text-align: justify;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 0;
   padding-bottom: 20px;
   font-size: 11pt;
 }
@@ -559,10 +562,190 @@ html, body {
   position: absolute;
 }
 
-.shown {
-  display: inherit;
+#outer {
+  float: center;
+  width: 210px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.notshown {
-  display: none;
+.akteurbereich {
+  width: 90%;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
 }
+
+@media only screen and (min-width: 767.98px) {
+
+  .foerdernde-mitglieder {
+    width: 910px !important;
+    padding-top: 75px !important;
+    padding-bottom: 75px !important;
+  }
+
+  .akteurbereich {
+    width: 66% !important;
+    padding-top: 75px !important;
+    padding-bottom: 75px !important;
+  }
+
+  .footer__contact {
+    width: 50% !important;
+  }
+  .name {
+    color: white;
+    font-family: "Azo Sans";
+    font-size: 21pt;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding-bottom: 20px;
+  }
+  .beschreibungstext {
+  color: white;
+  font-family: "Quicksand";
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 11pt;
+  }
+
+  .arrow {
+    width: 35px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .fm {
+    width: 90%;
+    padding: 5px !important;
+  }
+
+  .fmitglied {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  background-image: url("images/UeberUns/memberschlagschatten.png");
+  background-size: contain;
+  position: relative;
+  }
+
+  .fmitglied:hover {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    background-image: url("images/UeberUns/memberhover.png");
+    background-size: contain;
+  }
+
+  #outer {
+    float: center;
+    width: 820px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .oneband {
+    height: 25px;
+    position: relative;
+    padding: 0 !important;
+  }
+
+
+  .onesound {
+    text-align: center;
+    color: #171717;
+    background-color: #ECEAEA;
+    position: absolute;
+    font-size: 20pt;
+    font-family: 'Azo Sans';
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 1.25;
+    padding: 0 !important;
+    z-index: 0;
+  }
+
+  .rechteecke {
+    left: 66%;
+    background-color: #171717;
+    position: absolute;
+    height: 25px;
+    z-index: 1;
+    width: 100%;
+    transform: skew(-45deg);
+  }
+
+  .linkeecke {
+    right: 66%;
+    background-color: #171717;
+    position: absolute;
+    height: 25px;
+    z-index: 1;
+    width: 100%;
+    transform: skew(45deg);
+  }
+
+
+.headline {
+  color: #ECEAEA !important;
+  font-size: 20pt;
+  font-family: 'Quicksand';
+  text-align: right;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  padding-right: 12px;
+  line-height: 1;
+  right: 33%;
+  height: 25px;
+  z-index: 0;
+}
+
+.headline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 25px;
+  background-color: #171717;
+  box-shadow: 2px 2px 5px 1px #000000ab;
+  z-index: -1;
+}
+
+.headline--black {
+  color: #171717 !important;
+  font-size: 20pt;
+  font-family: 'Azo Sans';
+  text-align: left;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  padding-left: 12px;
+  line-height: 1.25;
+  left: 33%;
+  height: 25px;
+  z-index: 0;
+}
+
+.headline--black::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 25px;
+  background-color: #ECEAEA;
+  z-index: -1;
+}
+
+ }

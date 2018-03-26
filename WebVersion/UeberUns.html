@@ -13,6 +13,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="UeberUns.js" async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
 
 </head>
 
@@ -85,10 +88,10 @@
       <div class="row align-items-center no-gutters rechts">
         <div class="col-sm-6 fließtext--links">
               <span class="title">Eine Überschrift</span></br>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
-              et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est 
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+              et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
         </div>
         <div class="col-sm-6">
@@ -116,10 +119,10 @@
       </div>
         <div class="col-sm-6 fließtext--rechts">
           <span class="title">Eine Überschrift</span></br>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
           eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
         </div>
       </div>
@@ -127,10 +130,10 @@
       <div class="row align-items-center no-gutters rechts">
         <div class="col-sm-6 fließtext--links">
           <span class="title">Eine Überschrift</span></br>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
           et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
           eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
         </div>
         <div class="col-sm-3 bild--rechts">
@@ -149,7 +152,7 @@
       <div class="headline--black navbar__button--left">
         AKTEURE
       </div>
-      <div class="container foerdernde-mitglieder" id="testcontainer">
+      <div class="container akteurbereich">
 
         <div class="row align-items-center no-gutters bandmember" data-member-id="1">
           <div class="col-sm-6 Akteure">
@@ -175,7 +178,7 @@
             </div>
           </div>
         </div>
-    
+
         <div class="row align-items-center no-gutters bandmember" data-member-id="2">
           <div class="col-sm-6 Akteure">
             <img src="Images/Ueberuns/akteur2.png" width="90%" height="auto">
@@ -200,7 +203,7 @@
             </div>
           </div>
         </div>
-    
+
         <div class="row align-items-center no-gutters bandmember" data-member-id="3">
           <div class="col-sm-6 Akteure">
             <img src="Images/Ueberuns/akteur3.png" width="90%" height="auto">
@@ -225,10 +228,10 @@
             </div>
           </div>
         </div>
-    
+
 
       </div>
-    
+
       <div class="container akteurauswahl">
         <div class="row no-gutters">
           <div class="col member">
@@ -334,34 +337,6 @@
             </div>
           </div>
      </div>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-
-     <script>
-        $(function () {
-           var outer = $('#outer');
-
-           $('#right-button').click(function () {
-              var leftPos = outer.scrollLeft();
-              outer.animate({ scrollLeft: leftPos + 205 });
-           });
-
-           $('#left-button').click(function () {
-              var leftPos = outer.scrollLeft();
-              outer.animate({ scrollLeft: leftPos - 205 });
-            });
-        });
-     </script>
-     <style>
-      #outer {
-         float: center;
-         width: 100%;
-         overflow: hidden;
-         white-space: nowrap;
-      }
-   </style>
-
-
     </div>
 
     <div class="container-fluid black-content">
@@ -392,8 +367,8 @@
         </div>
     </div>
 
-    <div class="row w-50 footer__contact">
-    <div class="p-4 col">
+    <div class="row footer__contact">
+    <div class="p-3 col">
       <p class="justify-content-center d-flex">
         <a href="tel:+49 171 323 40 32" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-phone"></i>+49 171 / 323 40 32</a>
       </p>
@@ -401,7 +376,7 @@
         <a href="mailto:anfrage@thedrummerholics.de" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i>anfrage@thedrummerholics.de</a>
       </p>
     </div>
-    <div class="p-4 col">
+    <div class="p-3 col">
       <p class="d-flex justify-content-center">
           <a class="footer__buttons" href="#">Impressum | Kontakt</a></p>
       <p class="d-flex justify-content-center copyright">
