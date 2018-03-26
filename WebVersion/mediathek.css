@@ -372,17 +372,26 @@ nav {
     background-color: rgba(0, 0, 0, 0);
 }
 
-
-
-#portfolio-container .btn:hover {
-  text-decoration: none;color:#fff;background-color:#FF1351;
+.alben {
+    list-style: none;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    color: black;
 }
 
-#portfolio-container .btn:focus {
-  outline: none;
-  border-color: var(--darken-2);
-  box-shadow: 0 0 0 3px var(--darken-3);
+.alben:hover {
+    color: #0066cc;
+    font-weight: bold;
 }
+
+.active_album {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+
+
 /*Portfolio===============================*/
 
 
@@ -402,4 +411,13 @@ nav {
     padding: 40px 40px;
 }
 
+#portfolio-container .btn:hover {
+  text-decoration: none;color:#fff;background-color:#FF1351;
+}
+
+#portfolio-container .btn:focus {
+  outline: none;
+  border-color: var(--darken-2);
+  box-shadow: 0 0 0 3px var(--darken-3);
+}
 
