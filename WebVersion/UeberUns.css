@@ -128,7 +128,7 @@ html, body {
 
 /* Überschriften */
 .blackline {
-  background-color: black;
+  background-color: #171717;
   height: 25px;
   box-shadow: 2px 2px 5px 1px #000000ab;
   width: 100%;
@@ -137,7 +137,7 @@ html, body {
 }
 
 .whiteline {
-  background-color: white;
+  background-color: #ECEAEA;
   height: 25px;
   width: 100%;
   padding-right: 0px !important;
@@ -145,7 +145,7 @@ html, body {
 }
 
 .headline {
-  color: white !important;
+  color: #ECEAEA !important;
   font-size: 20pt;
   font-family: 'Quicksand';
   text-align: right;
@@ -167,13 +167,13 @@ html, body {
   bottom: 0;
   right: 0;
   height: 25px;
-  background-color: black;
+  background-color: #171717;
   box-shadow: 2px 2px 5px 1px #000000ab;
   z-index: -1;
 }
 
 .headline--black {
-  color: black !important;
+  color: #171717 !important;
   font-size: 20pt;
   font-family: 'Azo Sans';
   text-align: left;
@@ -195,20 +195,20 @@ html, body {
   bottom: 0;
   left: 0;
   height: 25px;
-  background-color: white;
+  background-color: #ECEAEA;
   z-index: -1;
 }
 
 /* Anpassungen für die Inhalte */
 .white-content {
-  background-color: white;
+  background-color: #ECEAEA;
   position: relative;
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
 
 .black-content {
-  background-color: black;
+  background-color: #171717;
   position: relative;
   padding-right: 0px !important;
   padding-left: 0px !important;
@@ -240,7 +240,7 @@ html, body {
 }
 
 .jahreszahl--rechts {
-  font-size: 20pt;
+  font-size: 24pt;
   font-weight: bold;
   text-align: left;
   font-family: "Quicksand";
@@ -248,7 +248,7 @@ html, body {
 }
 
 .jahreszahl--links {
-  font-size: 20pt;
+  font-size: 24pt;
   font-weight: bold;
   text-align: right;
   font-family: "Quicksand";
@@ -257,6 +257,7 @@ html, body {
 
 .bild--links {
   text-align: right;
+  width: 238px;
 }
 
 .bild--rechts {
@@ -265,32 +266,36 @@ html, body {
 
 .fließtext--rechts {
   text-align: left;
-  padding: 40px !important;
-  padding-left: 75px !important;
+  padding-right: 40px !important;
+  padding-left: 40px !important;
   font-family: "Quicksand";
   font-size: 11pt;
 }
 
 .fließtext--links {
   text-align: right;
-  padding: 40px !important;
-  padding-left: 75px !important;
+  padding-right: 40px !important;
+  padding-left: 40px !important;
   font-family: "Quicksand";
   font-size: 11pt;
-}
-
-.fließtext--überschrift {
-  font-family: "Azo Sans";
 }
 
 .abstand {
   height: 70px;
 }
 
+.title {
+  font-family: "Azo Sans";
+  font-size: 13pt;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+
+}
+
 .historyline {
   width: 7px;
   background-color: rgba(0,0, 0, 0.9);
-  height: 950px;
+  height: 940px;
   position: absolute;
   left: 0;
   right: 0;
@@ -462,7 +467,7 @@ html, body {
 
 .rechteecke {
   left: 66%;
-  background-color: black;
+  background-color: #171717;
   position: absolute;
   height: 25px;
   z-index: 1;
@@ -472,7 +477,7 @@ html, body {
 
 .linkeecke {
   right: 66%;
-  background-color: black;
+  background-color: #171717;
   position: absolute;
   height: 25px;
   z-index: 1;
