@@ -2,6 +2,7 @@
   font-family: "Azo Sans";
   src: url("C:\Windows\Fonts");
   }
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 
 html, body {
@@ -9,7 +10,8 @@ html, body {
   overflow-x: hidden;
 }
 
-.testi {
+/* Navigation */
+.navigationscontainer {
   position: relative;
   z-index: 1;
 }
@@ -21,21 +23,6 @@ html, body {
   left: 0;
   right: 0;
 }
-
-
-
-.header__background {
-
-  width: 100%;
-  position: relative;
-  height: 500px;
-  background-image: url("images/UeberUns/ueberuns-header.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 0;
-}
-
 
 .navbar__item {
   margin-right: 10px;
@@ -126,6 +113,20 @@ html, body {
   filter: drop-shadow(2px 2px 5px 1px #000000ab);
 }
 
+/* Header */
+.header__background {
+
+  width: 100%;
+  position: relative;
+  height: 500px;
+  background-image: url("images/UeberUns/ueberuns-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Überschriften */
 .blackline {
   background-color: black;
   height: 25px;
@@ -146,7 +147,7 @@ html, body {
 .headline {
   color: white !important;
   font-size: 20pt;
-  font-family: 'Century Gothic';
+  font-family: 'Quicksand';
   text-align: right;
   position: relative;
   top: 0;
@@ -198,7 +199,7 @@ html, body {
   z-index: -1;
 }
 
-
+/* Anpassungen für die Inhalte */
 .white-content {
   background-color: white;
   position: relative;
@@ -213,7 +214,6 @@ html, body {
   padding-left: 0px !important;
 }
 
-
 .inhalt--links {
   height: 238px;
   padding-right: 0px;
@@ -221,6 +221,8 @@ html, body {
   text-align: center;
   vertical-align: 50%;
 }
+
+/* Geschichtsbereich */
 
 .history {
   width: 66%;
@@ -237,11 +239,20 @@ html, body {
   padding-bottom: 75px !important;
 }
 
-.jahreszahl {
-  font-size: 15pt;
+.jahreszahl--rechts {
+  font-size: 20pt;
   font-weight: bold;
-  text-align: center;
-  font-family: "Century Gothic";
+  text-align: left;
+  font-family: "Quicksand";
+  padding-right: 50px !important;
+}
+
+.jahreszahl--links {
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: right;
+  font-family: "Quicksand";
+  padding-left: 50px !important;
 }
 
 .bild--links {
@@ -256,7 +267,7 @@ html, body {
   text-align: left;
   padding: 40px !important;
   padding-left: 75px !important;
-  font-family: "Century Gothic";
+  font-family: "Quicksand";
   font-size: 11pt;
 }
 
@@ -264,8 +275,12 @@ html, body {
   text-align: right;
   padding: 40px !important;
   padding-left: 75px !important;
-  font-family: "Century Gothic";
+  font-family: "Quicksand";
   font-size: 11pt;
+}
+
+.fließtext--überschrift {
+  font-family: "Azo Sans";
 }
 
 .abstand {
@@ -292,6 +307,7 @@ html, body {
   margin-right: 7px !important;
 }
 
+/* Fördernde Mitglieder Bereich */
 .foerdernde-mitglieder {
   padding-top: 75px !important;
   padding-bottom: 75px !important;
@@ -466,7 +482,7 @@ html, body {
 
 .Akteure {
   color: white;
-  font-family: "Century Gothic";
+  font-family: "Quicksand";
   font-size: 11pt;
   text-align: center;
 }
@@ -483,10 +499,10 @@ html, body {
 
 .beschreibungstext {
   color: white;
-  font-family: "Century Gothic";
+  font-family: "Quicksand";
   text-align: center;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 11pt;
@@ -536,4 +552,12 @@ html, body {
 
 .memberimage {
   position: absolute;
+}
+
+.shown {
+  display: inherit;
+}
+
+.notshown {
+  display: none;
 }
