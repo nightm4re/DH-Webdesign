@@ -2,7 +2,7 @@
 
 
 body {
-  background-color:lightgray;
+  background-color:white;
     font-family: 'Azo Sans' !important;
 }
 
@@ -171,13 +171,13 @@ nav {
   bottom: 0;
   left: 0;
   height: 25px;
-  background-color: lightgray;
+  background-color: white;
   z-index: -1;
 }
 
 
 .white-content {
-  background-color: lightgray;
+  background-color: white;
   position: relative;
   padding-right: 0px !important;
   padding-left: 0px !important;
@@ -423,21 +423,6 @@ nav {
   box-shadow: 0 0 0 3px var(--darken-3);
 }
 
-/*Youtube--------------------------------*/
-
-.youtube__video {
-    padding: 30px;
-}
-
-.thumbnail_video {
- display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-}
-
-
-
-/* Important Styles */
 .images {
   text-align: center;
   margin: auto;
@@ -478,6 +463,9 @@ nav {
 }
 
 .subscribe {
-    padding-top: 30px;
-    
+    padding: 20px;
+}
+
+.videoplugin {
+    padding-bottom: 30px;
 }

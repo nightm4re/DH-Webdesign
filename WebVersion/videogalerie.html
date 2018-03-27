@@ -8,6 +8,10 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="mediathek.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="videoslider/sliderengine/jquery.js"></script>
+    <script src="videoslider/sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="videoslider/sliderengine/amazingslider-1.css">
+    <script src="videoslider/sliderengine/initslider-1.js"></script>
    
     
 </head>
@@ -83,56 +87,91 @@
     
   
     
+<!--    Youtube Kanal abonnieren-->
 <div class="d-flex justify-content-center container subscribe">
     <script src="https://apis.google.com/js/platform.js"></script>
 
 <div class="g-ytsubscribe" data-channel="GoogleDevelopers" data-layout="full" data-count="hidden"></div></div>    
     
     
-<!-- Youtube Content Bereich   -->
-    <div class="d-flex justify-content-center conatiner youtube__video">
- <iframe width="1080" height="480"
-src="https://www.youtube.com/embed/zIDHAWUCoGU?ecver=2">
-</iframe>
+
+    
+    
+<!--   Vidoe-Plugin aus https://amazingslider.com-->
+    
+    <div class="container videoplugin">
+    
+    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 188px;">
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="videoslider/images/zIDHAWUCoGU.jpg" alt="The Drummerholics 
+01.01.2018
+Bedburg"  title="The Drummerholics 
+01.01.2018
+Bedburg" />
+                <video preload="none" src="https://www.youtube.com/embed/zIDHAWUCoGU?v=zIDHAWUCoGU" ></video>
+                </li>
+                <li><img src="videoslider/images/L36fiafsAXs.jpg" alt="The Drummerholics 
+01.01.2018
+Bedburg"  title="The Drummerholics 
+01.01.2018
+Bedburg" />
+                <video preload="none" src="https://www.youtube.com/embed/L36fiafsAXs?v=L36fiafsAXs" ></video>
+                </li>
+                <li><img src="videoslider/images/eazCAYNDYqQ.jpg" alt="The Drummerholics 
+01.01.2018
+Bedburg"  title="The Drummerholics 
+01.01.2018
+Bedburg" />
+                <video preload="none" src="https://www.youtube.com/embed/eazCAYNDYqQ?v=eazCAYNDYqQ" ></video>
+                </li>
+                <li><img src="videoslider/images/7Wau3LBiadI.jpg" alt="The Drummerholics 
+01.01.2018
+Bedburg"  title="The Drummerholics 
+01.01.2018
+Bedburg" />
+                <video preload="none" src="https://www.youtube.com/embed/7Wau3LBiadI?v=7Wau3LBiadI" ></video>
+                </li>
+                <li><img src="videoslider/images/0InE9cOjG84.jpg" alt="The Drummerholics 
+01.01.2018
+Bedburg"  title="The Drummerholics 
+01.01.2018
+Bedburg" />
+                <video preload="none" src="https://www.youtube.com/embed/0InE9cOjG84?v=0InE9cOjG84" ></video>
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="videoslider/images/zIDHAWUCoGU-tn.jpg" alt="The Drummerholics 
+01.01.2018
+Bedburg" title="The Drummerholics 
+01.01.2018
+Bedburg" /></li>
+                <li><img src="videoslider/images/L36fiafsAXs-tn.jpg" alt="The Drummerholics 
+01.01.2018
+Bedburg" title="The Drummerholics 
+01.01.2018
+Bedburg" /></li>
+                <li><img src="videoslider/images/eazCAYNDYqQ-tn.jpg" alt="The Drummerholics 
+01.01.2018
+Bedburg" title="The Drummerholics 
+01.01.2018
+Bedburg" /></li>
+                <li><img src="videoslider/images/7Wau3LBiadI-tn.jpg" alt="The Drummerholics 
+01.01.2018
+Bedburg" title="The Drummerholics 
+01.01.2018
+Bedburg" /></li>
+                <li><img src="videoslider/images/0InE9cOjG84-tn.jpg" alt="The Drummerholics 
+01.01.2018
+Bedburg" title="The Drummerholics 
+01.01.2018
+Bedburg" /></li>
+            </ul>
+        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Slider jQuery">Slider jQuery</a></div>
         </div>
-    
-<!--
-    <div class="container thumbnail_video">
-        <a href="#"><img src="Images/bedburg/thumbnails/the-drummerholics-bedburg-musikfestival-2017-web-10_tn.jpg" alt="..." class="img-thumbnail img-responsive "></a>
-         <a href="#"><img src="Images/bedburg/thumbnails/the-drummerholics-bedburg-musikfestival-2017-web-10_tn.jpg" alt="..." class="img-thumbnail img-responsive"></a>
-         <a href="#"><img src="Images/bedburg/thumbnails/the-drummerholics-bedburg-musikfestival-2017-web-10_tn.jpg" alt="..." class="img-thumbnail img-responsive"></a>
-         <a href="#"><img src="Images/bedburg/thumbnails/the-drummerholics-bedburg-musikfestival-2017-web-10_tn.jpg" alt="..." class="img-thumbnail img-responsive"></a>
     </div>
--->
-    
-    
-    
-    <div class="container">
-    <div class="d-flex justify-content-center images"><a href="#">
-        <figure>
-          <div class="overlay"></div><img src="Images/bedburg/thumbnails/the-drummerholics-bedburg-musikfestival-2017-web-10_tn.jpg"/>
-        </figure></a><a href="#">
-        <figure>
-          <div class="overlay"></div><img src="Images/bedburg/thumbnails/the-drummerholics-bedburg-musikfestival-2017-web-11_tn.jpg"/>
-        </figure></a><a href="#">
-        <figure>
-          <div class="overlay"></div><img src="Images/bedburg/thumbnails/the-drummerholics-bedburg-musikfestival-2017-web-12_tn.jpg"/>
-        </figure></a><a href="#">
-        <figure>
-          <div class="overlay"></div><img src="Images/bedburg/thumbnails/the-drummerholics-bedburg-musikfestival-2017-web-2_tn.jpg"/>
-        </figure></a></div>
- 
-</div>
-    
-    
-<!--
-    <div class="container ghgh">
-    <img src="Images/bedburg/thumbnails/the-drummerholics-bedburg-musikfestival-2017-web-10_tn.jpg" alt="...">
-        <div class="centered"><img src="http://www.pngmart.com/files/3/YouTube-Play-Button-PNG-Free-Download.png" alt="..." width="80"></div>
-    </div>
--->
-    
-    
+        </div>
+   
     
     
     
