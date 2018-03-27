@@ -44,14 +44,21 @@ function hideAllBandMembers() {
 
     $('#right-button').click(function () {
        var leftPos = outer.scrollLeft();
-       outer.animate({ scrollLeft: leftPos + 205 });
+       outer.animate({ scrollLeft: leftPos + 204 });
     });
 
     $('#left-button').click(function () {
        var leftPos = outer.scrollLeft();
-       outer.animate({ scrollLeft: leftPos - 205 });
+       outer.animate({ scrollLeft: leftPos - 204 });
      });
  });
 
+ jQuery(function($) {
 
+  $(".toggler--button").click(function() {
+    $(".more-history").slideToggle();
+    $(this).find(".fa-chevron-circle-up, .fa-chevron-circle-down").toggle();
+  });
+
+});
 

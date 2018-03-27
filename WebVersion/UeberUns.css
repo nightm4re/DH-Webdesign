@@ -224,6 +224,75 @@ html, body {
 
 /* Geschichtsbereich */
 
+.screen-history {
+  display: none;
+}
+
+.mobile-history {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.mobile-jahreszahl {
+  font-family: "Quicksand";
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mobile-image {
+  text-align: center;
+}
+
+.mobile-fließtext {
+  font-family: "Quicksand";
+  font-size: 11pt;
+  text-align: justify;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.abstand {
+  height: 40px;
+}
+
+.title {
+  font-family: "Azo Sans";
+  font-size: 13pt;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 !important;
+}
+
+/* Fördernde Mitglieder Bereich */
+.foerdernde-mitglieder {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  width: 90%;
+}
+
+.fmitglied {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  background-image: url("images/UeberUns/memberschlagschatten.png");
+  background-size: contain;
+  position: relative;
+}
+
+.fmitglied:hover {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  background-image: url("images/UeberUns/memberhover.png");
+  background-size: contain;
+}
+
+
 .history {
   width: 66%;
   margin-top: 50px;
@@ -232,11 +301,6 @@ html, body {
 .historybild {
   width: 100%;
   height: auto;
-}
-
-.test {
-  padding-top: 75px !important;
-  padding-bottom: 75px !important;
 }
 
 .jahreszahl--rechts {
@@ -289,19 +353,18 @@ html, body {
   font-size: 13pt;
   text-transform: uppercase;
   letter-spacing: 0.25em;
-
 }
 
 .historyline {
-  width: 7px;
-  background-color: rgba(0,0, 0, 0.9);
-  height: 930px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 119px;
+    width: 7px;
+    background-color: rgba(0,0, 0, 0.9);
+    height: 930px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 119px;
 }
 
 .links {
@@ -312,36 +375,23 @@ html, body {
   margin-right: 7px !important;
 }
 
-
-/* Fördernde Mitglieder Bereich */
-.foerdernde-mitglieder {
-  padding-top: 40px !important;
-  padding-bottom: 40px !important;
-  width: 90%;
+.toggler--button {
+  text-align: center;
+  width: 100%;
+  background-color: #ECEAEA;
 }
 
-.fmitglied {
-  height: 200px;
-  width: 200px;
-  display: inline-block;
-  background-image: url("images/UeberUns/memberschlagschatten.png");
-  background-size: contain;
-  position: relative;
+.more-history {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.fmitglied:hover {
-  height: 200px;
-  width: 200px;
-  display: inline-block;
-  background-image: url("images/UeberUns/memberhover.png");
-  background-size: contain;
+.is-hidden {
+  display: none;
 }
 
-
-/*@wCssFragment{class:mediaquerySize;variant:max768;caption:wenn die Fensterbreite kleiner gleich 768 Pixel ist;caption-en:if window width is equal or less 768 pixel} */
-@media only screen and (max-width: 992px){
-  .max992 {display:none}
-}
+/* Foerdernde Mitglieder*/
 
 .leftArrow {
   border: 1px solid transparent;
@@ -404,12 +454,12 @@ html, body {
 
 .social__channels i {
   margin: 10px;
-  color: white;
+  color: white !important;
 }
 
 .social__channels i:hover {
 
-  color: #0066cc;
+  color: #0066cc !important;
 }
 
 .footer__contact {
@@ -594,6 +644,7 @@ html, body {
   .footer__contact {
     width: 50% !important;
   }
+
   .name {
     color: white;
     font-family: "Azo Sans";
@@ -603,6 +654,7 @@ html, body {
     letter-spacing: 0.2em;
     padding-bottom: 20px;
   }
+
   .beschreibungstext {
   color: white;
   font-family: "Quicksand";
@@ -748,4 +800,17 @@ html, body {
   z-index: -1;
 }
 
+.screen-history {
+  padding-top: 75px !important;
+  padding-bottom: 75px !important;
+  display: block !important;
+}
+
+.mobile-history {
+  display: none;
+}
+
+.toggler--button {
+  display: none;
+}
  }
