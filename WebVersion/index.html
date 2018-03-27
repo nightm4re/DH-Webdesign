@@ -1,54 +1,70 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>The Drummerholics | Startseite</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<title>Startseite | The Drummerholic's</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/slick-theme.css">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/style.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
 
-  <div id="header">
-    <div class="container">
+    <!-- Google Fonts -->  
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">   
       
-      <div class="hamburger collapsed"><i></i></div>
-      <div id="mainmenu">
-        <ul class="left">
-          <li><a href="#"><span>ÜBER UNS</span></a></li>
-          <li><a href="#"><span>WORKSHOP</span></a></li>
-          <li><a href="#"><span>MEDIATHEK</span></a></li>
-        </ul>
-          <ul class="logo">
-              <li><div id="logo"><a href="#"><img src="img/logo.png" height="120px"></a></div></li>
-          </ul>
-        <ul class="right">
-          <li><a href="#"><span>TERMINE</span></a></li>
-          <li><a href="#"><span>BOOKING</span></a></li>
-          <li><a href="#"><span>FANSHOP</span></a></li>
-        </ul>
-      </div>
+  <body>
+    <!-- Navigationsleiste Desktop -->>  
+  <nav class="navbar navbar-expand-xl navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+      <ul class="navbar-nav">
+        <li class="nav-item navbar__item">
+          <a class="nav-link navbar__button navbar__button--left" href="UeberUns.html">Über Uns</a>
+        </li>
+        <li class="nav-item navbar__item">
+          <a class="nav-link navbar__button navbar__button--left" href="workshop.html">Workshop</a>
+        </li>
+        <li class="nav-item navbar__item">
+          <a class="nav-link navbar__button navbar__button--left" href="mediathek.html">Mediathek</a>
+        </li>
+      </ul>
+      <a href="index.html"><img class="navbar__logo" src="img/logo.png"></a>
+      <ul class="navbar-nav">
+        <li class="nav-item navbar__item">
+          <a class="nav-link navbar__button navbar__button--right" href="termine.html">Termine</a>
+        </li>
+        <li class="nav-item navbar__item">
+          <a class="nav-link navbar__button navbar__button--right" href="booking.html">Booking</a>
+        </li>
+        <li class="nav-item navbar__item">
+          <a class="nav-link navbar__button navbar__button--right" href="#">Fanshop</a>
+        </li>
+      </ul>
     </div>
-  </div>
+</nav>
 
-  <div class="blc-hero">
+<!-- Video -->
+ <div class="blc-hero">
     <div class="container-fluid">
-      <div class="title">The Drummerholics</div>
     </div>
     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zIDHAWUCoGU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
-
-  <div class="blc-event">
-    <div class="heading">
-      <div class="container">
-        <div class="title">
-          <span>UPCOMING EVENT</span>
-        </div>
-      </div>
+  </div>      
+      
+<!-- Upcoming Events -->
+  <div class="container-fluid white-content">
+    <div class="container-fluid blackline"> </div>
+    <div class="headline navbar__button--right">
+      UPCOMING EVENT
     </div>
+
+<!-- Beginn Upcoming Event -->
+<div class="blc-event">
     <div class="event">
       <div class="container">
         <div class="row">
@@ -56,87 +72,166 @@
             <div class="deadline">
               <div class="title">06. Januar 2017</div>
               <div class="sub">Hamburg xyz Halle</div>
-              <div class="controls"><a href="#" class="btn btn-primary">Tickets</a></div>
+              <div class="controls"><a href="termine.html" class="btn btn-primary">Tickets</a></div>
             </div>
           </div>
           <div class="col-md-7">
             <ul id="example">
-              <li><span class="days">00</span><p class="days_text">Days</p></li>
-              <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
-              <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
-              <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
+              <li><span class="days">50</span><p class="days_text">Days</p></li>
+              <li><span class="hours">50</span><p class="hours_text">Hours</p></li>
+              <li><span class="minutes">50</span><p class="minutes_text">Minutes</p></li>
+              <li><span class="seconds">50</span><p class="seconds_text">Seconds</p></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="blc-album">
+<!-- Beginn Albenansicht -->
+    <div class="blc-album container-fluid">
     <div class="albums">
-      <div class="item"><img src="img/album.jpg" alt="" class="img-fluid"></div>
-    </div>
-  </div>
+     
+    <ul class="container gallery">
 
-  <div class="blc-about">
-    <div class="heading">
-      <div class="container">
-        <div class="title">
-          <span>WANT TO BECOME A DRUMMERHOLIC?</span>
+      <li>
+        <div class="imgwrap">
+          <a href="bildergalerie.html">
+            <img src="img/picture4.jpg">
+            <span class="imgmask"></span>
+          </a>
         </div>
-      </div>
+        <a href="bildergalerie.html">
+          <h2>Bedburg</h2>
+        </a>
+      </li>
+
+      <li>
+        <div class="imgwrap">
+          <a href="bildergalerie.html">
+            <img src="img/picture3.jpg">
+            <span class="imgmask"></span>
+          </a>
+        </div>
+        <a href="bildergalerie.html">
+          <h2>Balld Könige</h2>
+        </a>
+      </li>
+
+      <li>
+        <div class="imgwrap">
+          <a href="bildergalerie.html">
+            <img src="img/picture2.jpg">
+            <span class="imgmask"></span>
+          </a>
+        </div>
+        <a href="bildergalerie.html">
+          <h2>Cat Ballou</h2>
+        </a>
+      </li>
+
+      <li>
+        <div class="imgwrap">
+          <a href="bildergalerie.html">
+            <img src="img/picture1.jpg">
+            <span class="imgmask"></span>
+          </a>
+        </div>
+        <a href="bildergalerie.html">
+          <h2>Elsdorf</h2>
+        </a>
+      </li>
+    </ul>
+    <hr>
+        </div>
+  </div> 
+      
+<!-- Want to be a Drummerholic -->    
+<div class="container-fluid white-content-drummer">
+    <div class="container-fluid blackline-drummer"> </div>
+    <div class="headline navbar__button--right">
+      <span>WANT TO BE A DRUMMERHOLIC?</span>
     </div>
+    <div class="blc-about">
     <div class="container">
       <div class="entry">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, co nsetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
       </div>
-      <div class="controls"><a href="#" class="btn btn-primary">LEARN MORE</a></div>
+      <div class="controls"><a href="UeberUns.html" class="btn btn-primary">LEARN MORE</a></div>
     </div>
-  </div>
-
-  <div class="head">
+    </div>
+  </div>          
+    <!-- Instagram -->
+    <div class="head">
     <div class="title">
       <span>INSTAGRAM</span>
     </div>
   </div>
   <div class="blc-insta">
     <div class="container">
-      <!-- Instagram Widget Embed Start -->
-      <div class="instawidget" data-user-name="cristiano" data-amount="8" data-grid="4"></div>
-      <script type="text/javascript" src="https://www.stadget.com/cdn/widget-init.min.js"></script>
-      <!-- Instagram Widget Embed End -->
+      <!-- Instagram Bilder -->
+<div class="container">
+  <section>
+    <div class="images"><a href="https://instagram.com/p/4AapMLDE15" target="_blank">
+        <figure>
+          <div class="overlay"></div><img src="https://t4.ftcdn.net/jpg/01/29/56/11/240_F_129561138_wNgoPFeBUA3J2buXxxOkb5YoKejUoSnb.jpg"/>
+        </figure></a><a href="https://instagram.com/p/wt-zffDE3h" target="_blank">
+        <figure>
+          <div class="overlay"></div><img src="https://t4.ftcdn.net/jpg/01/29/56/11/240_F_129561138_wNgoPFeBUA3J2buXxxOkb5YoKejUoSnb.jpg"/>
+        </figure></a><a href="https://instagram.com/p/rux-FrDEyp" target="_blank">
+        <figure>
+          <div class="overlay"></div><img src="https://t4.ftcdn.net/jpg/01/29/56/11/240_F_129561138_wNgoPFeBUA3J2buXxxOkb5YoKejUoSnb.jpg"/>
+        </figure></a><a href="https://instagram.com/p/wz6rlujEyH" target="_blank">
+        <figure>
+          <div class="overlay"></div><img src="https://t4.ftcdn.net/jpg/01/29/56/11/240_F_129561138_wNgoPFeBUA3J2buXxxOkb5YoKejUoSnb.jpg"/>
+        </figure></a></div>
+  </section>
+</div>
+    </div>
+  </div>  
+<!-- Footer -->      
+<footer>
+            <div class="py-5 footer">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-xl get__social">
+                <p class="get__social">GET SOCIAL</p>
+                </div>
+        </div>
+        <div class="row social__row">
+                <div class="col social__channels">
+                <p><a href="#"><i class="fa fa-facebook-official"  style="font-size:36px"></i></a>
+                    <a href="#"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+                    <a href="#"><i class="fa fa-youtube" style="font-size:36px"></i></a>
+                    </p> 
+            </div>
+        </div>
+        
+        <div class="row w-50 footer__contact">
+        <div class="p-4 col">
+          <p class="justify-content-center d-flex">
+            <a href="tel:+49 171 323 40 32" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-phone"></i>+49 171 / 323 40 32</a>
+          </p>
+          <p class="d-flex justify-content-center">
+            <a href="mailto:anfrage@thedrummerholics.de" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i>anfrage@thedrummerholics.de</a>
+          </p>
+        </div>
+        <div class="p-4 col">
+          <p class="d-flex justify-content-center">
+              <a class="footer__buttons" href="#">Impressum | Kontakt</a></p>
+          <p class="d-flex justify-content-center copyright">
+              © Copyright 2018 The Drummerholics</p>
+        </div>
+      </div>  
     </div>
   </div>
-
-  <div id="footer">
-    <div class="container">
-      <div class="social">
-        <div class="title">GET SOCIAL</div>
-        <ul>
-          <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
-          <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
-        </ul>
-      </div>
-      <div class="row">
-        <div class="col-md-4 offset-md-2">
-          <div class="contact">
-            TEL: 	+49 171 / 323  40 32 <br> EMAIL: <a href="#">KONTAKT@DRUMMERHOLICS.DE</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="copyright">
-            <a href="#">IMPRESSUM</a> | <a href="#">KONTAKT</a> <br>
-            &copy; THE DRUMMERHOLIC’S. ALL RIGHTS RESERVED.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/jquery-3.2.1.slim.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/core.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-</body>
+</footer>      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+     <script src="js/core.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>  
+  </body>
 </html>
