@@ -1,6 +1,6 @@
 /** Navigationsleiste **/
 body {
-  background-color:beige;
+  background-color:lightgray;
     font-family: 'Azo Sans' !important;
 }
 
@@ -127,7 +127,7 @@ position:relative;
 }
 
 .whiteline {
-  background-color: white;
+  background-color: lightgray;
   height: 25px;
   width: 100%;
   padding-right: 0px !important;
@@ -136,7 +136,7 @@ position:relative;
 
 
 .white-content {
-  background-color: white;
+  background-color: lightgray;
   position: relative;
   padding-right: 0px !important;
   padding-left: 0px !important;
@@ -271,7 +271,7 @@ hr {
 
 a {
   text-decoration: none;
-  color: #ff0080;
+  color: #0066cc;
 }
 
 .container {
@@ -565,7 +565,7 @@ a {
 /** Want to be a drummerholic **/
 
 .white-content-drummer {
-  background-color: white;
+  background-color: lightgray;
   position: relative;
   padding-right: 0px !important;
   padding-left: 0px !important;
@@ -591,7 +591,7 @@ body {
   line-height: 1em;
   text-align: center;
   color: #444;
-  background: #d0d0d0;
+  background: lightgray;
   padding-bottom: 2.5em;
 }
 h1 {
