@@ -426,7 +426,7 @@ nav {
 /*Youtube--------------------------------*/
 
 .youtube__video {
-    padding: 30px 30px;
+    padding: 30px;
 }
 
 .thumbnail_video {
@@ -435,9 +435,49 @@ nav {
     padding-bottom: 30px;
 }
 
-.thumbnail_video img{
-    margin: 7px;
+
+
+/* Important Styles */
+.images {
+  text-align: center;
+  margin: auto;
+  
+}
+.images a {
+  display: inline-block;
+  width: 46%;
+  max-width: 200px;
+  margin: 0 20px 20px 0;
+}
+.images figure {
+  position: relative;
+  overflow: hidden;
+  max-height: 200px;
+}
+.images .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  background: url("play-button.svg") 50% / 50px
+      no-repeat,
+    rgba(0, 0, 0, 0.5);
+}
+.images a:hover .overlay,
+.images a:focus .overlay {
+  opacity: 1;
+}
+.images a:hover figure img,
+.images a:focus figure img {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
 
-.thumbnail_video img:hover{
+.subscribe {
+    padding-top: 30px;
+    
 }
