@@ -1,7 +1,8 @@
 
 
+
 body {
-  background-color:beige;
+  background-color:lightgray;
     font-family: 'Azo Sans' !important;
 }
 
@@ -25,7 +26,7 @@ nav {
   width: 160px;
   height: 32px;
   text-align: center;
-  font-family: "Century Gothic";
+  font-family: "Azo Sans";
   color: white !important;
   font-size: 11pt;
   text-transform: uppercase;
@@ -170,13 +171,13 @@ nav {
   bottom: 0;
   left: 0;
   height: 25px;
-  background-color: beige;
+  background-color: lightgray;
   z-index: -1;
 }
 
 
 .white-content {
-  background-color: beige;
+  background-color: lightgray;
   position: relative;
   padding-right: 0px !important;
   padding-left: 0px !important;
@@ -375,9 +376,10 @@ nav {
 .alben {
     list-style: none;
     float: left;
-    margin: 10px;
+    margin: 15px;
     text-align: center;
     color: black;
+    text-align: center;
 }
 
 .alben:hover {
@@ -421,3 +423,21 @@ nav {
   box-shadow: 0 0 0 3px var(--darken-3);
 }
 
+/*Youtube--------------------------------*/
+
+.youtube__video {
+    padding: 30px 30px;
+}
+
+.thumbnail_video {
+ display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.thumbnail_video img{
+    margin: 7px;
+}
+
+.thumbnail_video img:hover{
+}
