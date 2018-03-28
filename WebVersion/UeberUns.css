@@ -231,12 +231,12 @@ html, body {
 .mobile-history {
   width: 100%;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .mobile-jahreszahl {
   font-family: "Quicksand";
-  font-size: 18pt;
+  font-size: 19pt;
   font-weight: bold;
   text-align: center;
 }
@@ -271,6 +271,7 @@ html, body {
 /* Fördernde Mitglieder Bereich */
 .foerdernde-mitglieder {
   padding-top: 40px !important;
+
   padding-bottom: 40px !important;
   width: 90%;
 }
@@ -304,7 +305,7 @@ html, body {
 }
 
 .jahreszahl--rechts {
-  font-size: 24pt;
+  font-size: 2pt;
   font-weight: bold;
   text-align: left;
   font-family: "Quicksand";
@@ -312,7 +313,7 @@ html, body {
 }
 
 .jahreszahl--links {
-  font-size: 24pt;
+  font-size: 21pt;
   font-weight: bold;
   text-align: right;
   font-family: "Quicksand";
@@ -350,7 +351,7 @@ html, body {
 
 .title {
   font-family: "Azo Sans";
-  font-size: 13pt;
+  font-size: 11pt;
   text-transform: uppercase;
   letter-spacing: 0.25em;
 }
@@ -379,6 +380,7 @@ html, body {
   text-align: center;
   width: 100%;
   background-color: #ECEAEA;
+  padding-bottom: 40px;
 }
 
 .more-history {
@@ -463,20 +465,26 @@ html, body {
 }
 
 .footer__contact {
+  padding-bottom: 0 !important;
   margin: 0 auto;
   width: 90%;
 }
 
 .footer__buttons {
-  color: white;
+  color: #0066cc;
   text-align: center;
-
+  text-transform: uppercase;
+  font-size: 15pt;
 }
 
 .footer__buttons:hover {
   color: #0066cc;
   text-decoration: none;
   font-weight: bold;
+}
+
+.impressumkontakt {
+  padding-top: 0 !important;
 }
 
 .copyright{
@@ -518,7 +526,7 @@ html, body {
 }
 
 .rechteecke {
-  left: 93%;
+  left: 95%;
   background-color: #171717;
   position: absolute;
   height: 25px;
@@ -528,7 +536,7 @@ html, body {
 }
 
 .linkeecke {
-  right: 93%;
+  right: 95%;
   background-color: #171717;
   position: absolute;
   height: 25px;
@@ -627,12 +635,18 @@ html, body {
   padding-bottom: 40px !important;
 }
 
+.mobile-no-padding {
+  padding-bottom: 0 !important;
+}
+
 @media only screen and (min-width: 767.98px) {
 
   .foerdernde-mitglieder {
     width: 910px !important;
     padding-top: 75px !important;
     padding-bottom: 75px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .akteurbereich {
@@ -673,8 +687,9 @@ html, body {
   }
 
   .fm {
-    width: 90%;
-    padding: 5px !important;
+    width: 820px;
+    padding: 0 !important;
+    text-align: left !important;
   }
 
   .fmitglied {
@@ -812,5 +827,25 @@ html, body {
 
 .toggler--button {
   display: none;
+}
+
+.footer__buttons {
+  color: white;
+  text-align: center;
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.footer__contact {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.mobile-no-padding {
+  padding-bottom: 1rem !important;
+}
+
+.impressumkontakt {
+  padding-top: 1rem !important;
 }
  }
