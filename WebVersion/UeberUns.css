@@ -218,7 +218,7 @@ html, body {
   padding-left: 0px !important;
 }
 
-/* Geschichtsbereich */
+/* Geschichtsbereich Mobile Variante */
 
 .screen-history {
   display: none;
@@ -427,6 +427,50 @@ html, body {
   display: inline-block;
 }
 
+/* One Band - One Sound Überschrift (Spezialfall) */
+
+.oneband {
+  height: 25px;
+  position: relative;
+  padding: 0 !important;
+}
+
+.onesound {
+  text-align: center;
+  color: #171717;
+  background-color: #ECEAEA;
+  position: absolute;
+  font-size: 18pt;
+  font-family: 'Azo Sans';
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  line-height: 1.3em;
+  padding: 0 !important;
+  z-index: 0;
+}
+
+.rechteecke {
+  left: 95%;
+  background-color: #171717;
+  position: absolute;
+  height: 25px;
+  z-index: 1;
+  width: 100%;
+  transform: skew(-45deg);
+}
+
+.linkeecke {
+  right: 95%;
+  background-color: #171717;
+  position: absolute;
+  height: 25px;
+  z-index: 1;
+  width: 100%;
+  transform: skew(45deg);
+}
+
 /* footer */
 
 .footer {
@@ -493,47 +537,6 @@ html, body {
   text-decoration: none !important;
 }
 
-.oneband {
-  height: 25px;
-  position: relative;
-  padding: 0 !important;
-}
-
-.onesound {
-  text-align: center;
-  color: #171717;
-  background-color: #ECEAEA;
-  position: absolute;
-  font-size: 18pt;
-  font-family: 'Azo Sans';
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  line-height: 1.3em;
-  padding: 0 !important;
-  z-index: 0;
-}
-
-.rechteecke {
-  left: 95%;
-  background-color: #171717;
-  position: absolute;
-  height: 25px;
-  z-index: 1;
-  width: 100%;
-  transform: skew(-45deg);
-}
-
-.linkeecke {
-  right: 95%;
-  background-color: #171717;
-  position: absolute;
-  height: 25px;
-  z-index: 1;
-  width: 100%;
-  transform: skew(45deg);
-}
 
 .Akteure {
   color: white;
