@@ -1,70 +1,79 @@
-  /* Diverse benötigte Funktionen um die verschiedenen Akteure ein- und auszublenden */
-  
-  function hideAllBandMembers() {
+function hideAllBandMembers() {
 
     $('[data-member-id]').addClass('d-none');
-  }
+}
 
-  function showBandMember(memberId) {
+function showBandMember(memberId) {
 
     hideAllBandMembers();
 
     const memberContainer = $(`[data-member-id=${memberId}]`)
     memberContainer.removeClass('d-none');
-  }
+}
 
-  function loadBandMemberFromUrl() {
+function loadBandMemberFromUrl() {
 
     const hasNoUrlHash = Boolean(window.location.hash) === false;
     if (hasNoUrlHash) {
-      return;
+        return;
     }
 
-    // abschneiden des "#" am Start
+    // cut off the "#" at the start
     const urlHash = window.location.hash.substring(1);
     const memberId = Number(urlHash);
 
     const memberIdIsInvalid = Boolean(memberId) === false;
     if (memberIdIsInvalid) {
-      return;
+        return;
     }
 
     showBandMember(memberId);
-  }
+}
 
-  function onDocumentReady() {
+function initShowMoreHistoryButton() {
+
+    $('.toggler--button').click(function() {
+        $('.more-history').slideToggle();
+        $(this).find('.fa-chevron-circle-up, .fa-chevron-circle-down').toggle();
+    });
+}
+
+function initBandMemberCarouselButtons() {
+
+    const outer = $('#outer');
+
+    $('#right-button').click(function() {
+        const leftPos = outer.scrollLeft();
+        outer.animate({ scrollLeft: leftPos + 204 });
+    });
+
+    $('#left-button').click(function() {
+        const leftPos = outer.scrollLeft();
+        outer.animate({ scrollLeft: leftPos - 204 });
+    });
+}
+
+function initNavbarToggleButton() {
+
+    const openMenuIconClass = 'fa-bars';
+    const closeMenuIconClass = 'fa-times';
+
+    $('.navbar__toggle-button').click(() => {
+        $('.navbar__toggle-button > i')
+            .toggleClass(openMenuIconClass)
+            .toggleClass(closeMenuIconClass);
+    });
+}
+
+function onDocumentReady() {
 
     showBandMember(1);
     loadBandMemberFromUrl();
-  }
 
-  $(document).ready(() => onDocumentReady());
-  $(window).on('hashchange', () => loadBandMemberFromUrl());
+    initShowMoreHistoryButton();
+    initBandMemberCarouselButtons();
+    initNavbarToggleButton();
+}
 
-  /* Scroll Funktion für die Fördernden Mitglieder */
-
-  $(function () {
-    var outer = $('#outer');
-
-    $('#right-button').click(function () {
-       var leftPos = outer.scrollLeft();
-       outer.animate({ scrollLeft: leftPos + 204 });
-    });
-
-    $('#left-button').click(function () {
-       var leftPos = outer.scrollLeft();
-       outer.animate({ scrollLeft: leftPos - 204 });
-     });
- });
-
- /* Funktion für den Toggler-Button */
-
- jQuery(function($) {
-
-  $(".toggler--button").click(function() {
-    $(".more-history").slideToggle();
-    $(this).find(".fa-chevron-circle-up, .fa-chevron-circle-down").toggle();
-  });
-
-});
-
+$(document).ready(() => onDocumentReady());
+$(window).on('hashchange', () => loadBandMemberFromUrl());
