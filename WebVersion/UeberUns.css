@@ -1,16 +1,18 @@
+/* Import der verwendeten Schriftarten */
+
 @font-face {
   font-family: "Azo Sans";
   src: url("C:\Windows\Fonts");
-  }
+}
+
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-
-
 html, body {
   height: 100%;
   overflow-x: hidden;
 }
 
 /* Navigation */
+
 .navigationscontainer {
   position: relative;
   z-index: 1;
@@ -49,7 +51,7 @@ html, body {
   top: 0;
   left: 0;
   z-index: -1;
-  background-color: rgba(0,0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 5px;
   box-shadow: 2px 2px 5px 1px #000000ab;
 }
@@ -74,7 +76,7 @@ html, body {
   top: 0;
   left: 0;
   z-index: -1;
-  background-color: rgba(0,0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 5px;
   box-shadow: 2px 2px 5px 1px #000000ab;
 }
@@ -92,7 +94,7 @@ html, body {
 }
 
 .navbar__button--right::after {
-  content:'';
+  content: '';
   transform: skew(-45deg);
 }
 
@@ -114,8 +116,8 @@ html, body {
 }
 
 /* Header */
-.header__background {
 
+.header__background {
   width: 100%;
   position: relative;
   height: 500px;
@@ -127,6 +129,7 @@ html, body {
 }
 
 /* Überschriften */
+
 .blackline {
   background-color: #171717;
   height: 20px;
@@ -200,6 +203,7 @@ html, body {
 }
 
 /* Anpassungen für die Inhalte */
+
 .white-content {
   background-color: #ECEAEA;
   position: relative;
@@ -212,14 +216,6 @@ html, body {
   position: relative;
   padding-right: 0px !important;
   padding-left: 0px !important;
-}
-
-.inhalt--links {
-  height: 238px;
-  padding-right: 0px;
-  padding-left: 0px;
-  text-align: center;
-  vertical-align: 50%;
 }
 
 /* Geschichtsbereich */
@@ -269,9 +265,9 @@ html, body {
 }
 
 /* Fördernde Mitglieder Bereich */
+
 .foerdernde-mitglieder {
   padding-top: 40px !important;
-
   padding-bottom: 40px !important;
   width: 90%;
 }
@@ -292,7 +288,6 @@ html, body {
   background-image: url("images/UeberUns/memberhover.png");
   background-size: contain;
 }
-
 
 .history {
   width: 66%;
@@ -357,15 +352,15 @@ html, body {
 }
 
 .historyline {
-    width: 7px;
-    background-color: rgba(0,0, 0, 0.9);
-    height: 930px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 119px;
+  width: 7px;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 930px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 119px;
 }
 
 .links {
@@ -406,6 +401,7 @@ html, body {
 .arrow {
   width: 10%;
   padding: 5px;
+  text-align: center;
 }
 
 .fm {
@@ -431,7 +427,6 @@ html, body {
   display: inline-block;
 }
 
-
 /* footer */
 
 .footer {
@@ -448,10 +443,8 @@ html, body {
   padding-top: 20px;
 }
 
-
 .social__channels {
   text-align: center;
-
 }
 
 .social__channels i {
@@ -460,7 +453,6 @@ html, body {
 }
 
 .social__channels i:hover {
-
   color: #0066cc !important;
 }
 
@@ -487,7 +479,7 @@ html, body {
   padding-top: 0 !important;
 }
 
-.copyright{
+.copyright {
   text-align: center;
 }
 
@@ -499,7 +491,6 @@ html, body {
   color: #0066cc !important;
   font-weight: bold;
   text-decoration: none !important;
-
 }
 
 .oneband {
@@ -507,7 +498,6 @@ html, body {
   position: relative;
   padding: 0 !important;
 }
-
 
 .onesound {
   text-align: center;
@@ -640,7 +630,6 @@ html, body {
 }
 
 @media only screen and (min-width: 767.98px) {
-
   .foerdernde-mitglieder {
     width: 910px !important;
     padding-top: 75px !important;
@@ -648,17 +637,14 @@ html, body {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-
   .akteurbereich {
     width: 66% !important;
     padding-top: 75px !important;
     padding-bottom: 75px !important;
   }
-
   .footer__contact {
     width: 50% !important;
   }
-
   .name {
     color: white;
     font-family: "Azo Sans";
@@ -668,39 +654,34 @@ html, body {
     letter-spacing: 0.2em;
     padding-bottom: 20px;
   }
-
   .beschreibungstext {
-  color: white;
-  font-family: "Quicksand";
-  text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 11pt;
+    color: white;
+    font-family: "Quicksand";
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 11pt;
   }
-
   .arrow {
     width: 35px;
     padding: 5px;
     text-align: center;
   }
-
   .fm {
     width: 820px;
     padding: 0 !important;
     text-align: left !important;
   }
-
   .fmitglied {
-  height: 200px;
-  width: 200px;
-  display: inline-block;
-  background-image: url("images/UeberUns/memberschlagschatten.png");
-  background-size: contain;
-  position: relative;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    background-image: url("images/UeberUns/memberschlagschatten.png");
+    background-size: contain;
+    position: relative;
   }
-
   .fmitglied:hover {
     height: 200px;
     width: 200px;
@@ -708,21 +689,17 @@ html, body {
     background-image: url("images/UeberUns/memberhover.png");
     background-size: contain;
   }
-
   #outer {
     float: center;
     width: 820px;
     overflow: hidden;
     white-space: nowrap;
   }
-
   .oneband {
     height: 25px;
     position: relative;
     padding: 0 !important;
   }
-
-
   .onesound {
     text-align: center;
     color: #171717;
@@ -738,7 +715,6 @@ html, body {
     padding: 0 !important;
     z-index: 0;
   }
-
   .rechteecke {
     left: 66%;
     background-color: #171717;
@@ -748,7 +724,6 @@ html, body {
     width: 100%;
     transform: skew(-45deg);
   }
-
   .linkeecke {
     right: 66%;
     background-color: #171717;
@@ -758,94 +733,82 @@ html, body {
     width: 100%;
     transform: skew(45deg);
   }
-
-
-.headline {
-  color: #ECEAEA !important;
-  font-size: 20pt;
-  font-family: 'Quicksand';
-  text-align: right;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  padding-right: 12px;
-  line-height: 1;
-  right: 33%;
-  height: 25px;
-  z-index: 0;
+  .headline {
+    color: #ECEAEA !important;
+    font-size: 20pt;
+    font-family: 'Quicksand';
+    text-align: right;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    padding-right: 12px;
+    line-height: 1;
+    right: 33%;
+    height: 25px;
+    z-index: 0;
+  }
+  .headline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 25px;
+    background-color: #171717;
+    box-shadow: 2px 2px 5px 1px #000000ab;
+    z-index: -1;
+  }
+  .headline--black {
+    color: #171717 !important;
+    font-size: 20pt;
+    font-family: 'Azo Sans';
+    text-align: left;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    padding-left: 12px;
+    line-height: 1.25;
+    left: 33%;
+    height: 25px;
+    z-index: 0;
+  }
+  .headline--black::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 25px;
+    background-color: #ECEAEA;
+    z-index: -1;
+  }
+  .screen-history {
+    padding-top: 75px !important;
+    padding-bottom: 75px !important;
+    display: block !important;
+  }
+  .mobile-history {
+    display: none;
+  }
+  .toggler--button {
+    display: none;
+  }
+  .footer__buttons {
+    color: white;
+    text-align: center;
+    text-transform: none;
+    font-size: 1rem;
+  }
+  .footer__contact {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .mobile-no-padding {
+    padding-bottom: 1rem !important;
+  }
+  .impressumkontakt {
+    padding-top: 1rem !important;
+  }
 }
-
-.headline::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 25px;
-  background-color: #171717;
-  box-shadow: 2px 2px 5px 1px #000000ab;
-  z-index: -1;
-}
-
-.headline--black {
-  color: #171717 !important;
-  font-size: 20pt;
-  font-family: 'Azo Sans';
-  text-align: left;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  padding-left: 12px;
-  line-height: 1.25;
-  left: 33%;
-  height: 25px;
-  z-index: 0;
-}
-
-.headline--black::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  height: 25px;
-  background-color: #ECEAEA;
-  z-index: -1;
-}
-
-.screen-history {
-  padding-top: 75px !important;
-  padding-bottom: 75px !important;
-  display: block !important;
-}
-
-.mobile-history {
-  display: none;
-}
-
-.toggler--button {
-  display: none;
-}
-
-.footer__buttons {
-  color: white;
-  text-align: center;
-  text-transform: none;
-  font-size: 1rem;
-}
-
-.footer__contact {
-  margin: 0 auto;
-  width: 90%;
-}
-
-.mobile-no-padding {
-  padding-bottom: 1rem !important;
-}
-
-.impressumkontakt {
-  padding-top: 1rem !important;
-}
- }
