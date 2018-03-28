@@ -1,4 +1,6 @@
-function hideAllBandMembers() {
+  /* Diverse benötigte Funktionen um die verschiedenen Akteure ein- und auszublenden */
+  
+  function hideAllBandMembers() {
 
     $('[data-member-id]').addClass('d-none');
   }
@@ -18,7 +20,7 @@ function hideAllBandMembers() {
       return;
     }
 
-    // cut off the "#" at the start
+    // abschneiden des "#" am Start
     const urlHash = window.location.hash.substring(1);
     const memberId = Number(urlHash);
 
@@ -39,6 +41,8 @@ function hideAllBandMembers() {
   $(document).ready(() => onDocumentReady());
   $(window).on('hashchange', () => loadBandMemberFromUrl());
 
+  /* Scroll Funktion für die Fördernden Mitglieder */
+
   $(function () {
     var outer = $('#outer');
 
@@ -52,6 +56,8 @@ function hideAllBandMembers() {
        outer.animate({ scrollLeft: leftPos - 204 });
      });
  });
+
+ /* Funktion für den Toggler-Button */
 
  jQuery(function($) {
 

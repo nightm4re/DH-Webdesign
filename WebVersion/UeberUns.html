@@ -3,11 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- Einstellung des Viewports -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Titel der Seite -->
   <title>Drummerholic's</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
+  <!-- Laden des dazugehörigen Stylesheets und der Javascript Datei -->
   <link rel="stylesheet" href="UeberUns.css">
+  <script src="UeberUns.js" async></script>
+  <!-- Laden sämtlicher Hilfsmittel. Bootstrap, Font-Awesome, JQuery -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
@@ -15,11 +20,9 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="UeberUns.js" async></script>
-
-
 </head>
 
+<!-- Navigationsleiste in der Screenansicht -->
 <body>
   <div class="container-fluid navigationscontainer">
     <nav class="navbar navbar-expand-xl navbar-dark">
@@ -54,15 +57,21 @@
       </div>
     </nav>
   </div>
+  <!-- Navigation Ende -->
 
+  <!-- Header -->
   <header class="container-fluid header__background"></header>
+  <!-- Header Ende -->
+
+  <!-- Überschrift des History-Bereichs -->
   <div class="container-fluid white-content">
     <div class="container-fluid blackline"> </div>
     <div class="headline navbar__button--right">
       GESCHICHTE
     </div>
-
+  <!-- Mobile History Ansicht, Arbeit mit Containern. Beginnt mit dem immer sichtbaren Part. -->
     <div class="container mobile-history">
+      <!-- In einer Zeile jeweils Jahreszahl und Bild, abwechselnd versetzt -->
       <div class="row align-items-center no-gutters">
         <div class="col-6 mobile-image">
           <img src="Images/UeberUns/history2.png" width="90%" height="auto">
@@ -71,6 +80,7 @@
           2005
         </div>
       </div>
+      <!-- In der nächsten Zeile dann der Fließtext mit "eingebauter" Überschrift -->
       <div class="row align-items-center">
         <div class="col mobile-fließtext">
           <span class="title">Eine Überschrift</span>
@@ -81,7 +91,9 @@
           sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
         </div>
       </div>
+      <!-- Eine eigene Zeile als Abstandhalter -->
       <div class="row abstand"></div>
+      <!-- Ab hier wiederholt sich der Aufbau -->
       <div class="row align-items-center no-gutters">
         <div class="col-6 mobile-jahreszahl">
           2005
@@ -101,6 +113,7 @@
         </div>
       </div>
     </div>
+    <!-- Der von vorneherein sichtbare Inhalt endet hier, nun kommt der Container mit dem "ausfahrbaren Inhalt" -->
     <div class="container more-history is-hidden">
       <div class="row align-items-center no-gutters">
         <div class="col-6 mobile-image">
@@ -140,18 +153,21 @@
         </div>
       </div>
     </div>
-
+    <!-- Inhalte der Geschichte enden hier. Es folgt ein Toggler Button zum mehr oder weniger anzeigen -->
     <div class="container toggler--button">
       <i class="fa fa-chevron-circle-down" style="font-size: 60px; color: #0066cc;"></i>
       <i class="fa fa-chevron-circle-up" style="font-size: 60px; color: #0066cc; display: none"></i>
     </div>
+<!-- Mobile Ansicht des History Bereichs Ende -->
 
-
-
+<!-- Die Screen Ansicht des History Bereichs -->
     <div class="container screen-history">
+      <!-- Eigener Div für die im Hintergrund liegende Linie -->
       <div class="historyline"></div>
+      <!-- Es folgt ein ähnlicher Aufbau wie bei der mobilen Ansicht, dieses Mal jedoch alles in einer Zeile -->
       <div class="row align-items-center no-gutters links">
         <div class="col-sm-6">
+          <!-- Container für die Jahreszahl und das Bild. Verschiedene CSS Klassen für jeweils unterschiedlich angeordnete Inhalte -->
           <div class="row align-items-center no-gutters">
             <div class="col-6 jahreszahl--links">
               2005
@@ -162,6 +178,7 @@
           </div>
         </div>
         <div class="col-sm-6 fließtext--rechts">
+          <!-- Container für den Fließtext, danach folgen Wiederholungen für jede Zeile -->
           <span class="title">Die Gründung</span>
           </br>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
@@ -170,6 +187,7 @@
           sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
         </div>
       </div>
+      <!-- Wieder eine Zeile für den Abstand -->
       <div class="row abstand"></div>
       <div class="row align-items-center no-gutters rechts">
         <div class="col-sm-6 fließtext--links">
@@ -231,15 +249,18 @@
       </div>
     </div>
   </div>
+<!-- Ende des Geschichtsbereich, sowohl Mobile als auch Screen -->
 
-
+<!-- Überschrift für den Akteurbereich -->
   <div class="container-fluid black-content">
     <div class="container-fluid whiteline"> </div>
     <div class="headline--black navbar__button--left">
       AKTEURE
     </div>
+    <!-- Inhalt des Akteurbereichs, das div in dem sich der Inhalt jeweils wechselt -->
     <div class="container akteurbereich">
 
+      <!-- Die Beschreibung des ersten Bandmitglieds -->
       <div class="row align-items-center no-gutters bandmember" data-member-id="1">
         <div class="col-sm-6 Akteure">
           <img src="Images/Ueberuns/akteur1.png" width="90%" height="auto">
@@ -264,6 +285,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Ende des Bereichs für das erste Mitlied, Beginn nächstes Mitglied. -->
 
       <div class="row align-items-center no-gutters bandmember" data-member-id="2">
         <div class="col-sm-6 Akteure">
@@ -290,6 +313,8 @@
         </div>
       </div>
 
+      <!-- Ende des Bereichs für das Mitlied, Beginn nächstes Mitglied. -->
+
       <div class="row align-items-center no-gutters bandmember" data-member-id="3">
         <div class="col-sm-6 Akteure">
           <img src="Images/Ueberuns/akteur3.png" width="90%" height="auto">
@@ -314,10 +339,10 @@
           </div>
         </div>
       </div>
-
-
     </div>
+    <!-- Ende der Bandmitglieder -->
 
+    <!-- Die Auswahl der Bandmitglieder / Akteure -->
     <div class="container akteurauswahl">
       <div class="row no-gutters">
         <div class="col member">
@@ -372,67 +397,71 @@
     </div>
     <div style="height: 75px;"> </div>
   </div>
+  <!-- Ende der Akteurauswahl -->
 
-
-
-
+  <!-- Überschrift für den Bereich der fördernden Mitglieder -->
   <div class="container-fluid white-content">
     <div class="container-fluid blackline"> </div>
     <div class="headline navbar__button--right">
       FÖRDERNDE MITGLIEDER
     </div>
 
-
+    <!-- Bereich der fördernden Mitglieder, "scrollbares" Div welches durch Pfeile gescrollt wird -->
     <div class="container foerdernde-mitglieder">
       <div class="row align-items-center no-gutters">
+        <!-- linker Pfeilbutton -->
         <div class="col arrow">
           <input type="image" id="left-button" class="leftArrow" src="Images/Ueberuns/arrowleft.png">
         </div>
+        <!-- Scrollbarer Bereich -->
         <div class="col fm no-gutters">
           <div id="outer">
             <div id="inner">
               <div class="fmitglied">
                 <div class="membertext">Max Mustermann
-                  <br>Dude</div>
+                  <br>Aufgabe</div>
               </div>
               <div class="fmitglied">
                 <div class="membertext">Max Mustermann
-                  <br>Dude 2</div>
+                  <br>Aufgabe</div>
               </div>
               <div class="fmitglied">
                 <div class="membertext">Max Mustermann
-                  <br>Dude 3</div>
+                  <br>Aufgabe</div>
               </div>
               <div class="fmitglied">
                 <div class="membertext">Max Mustermann
-                  <br>Dude</div>
+                  <br>Aufgabe</div>
               </div>
               <div class="fmitglied">
                 <div class="membertext">Max Mustermann
-                  <br>Dude</div>
+                  <br>Aufgabe</div>
               </div>
               <div class="fmitglied">
                 <div class="membertext">Max Mustermann
-                  <br>Dude</div>
+                  <br>Aufgabe</div>
               </div>
               <div class="fmitglied">
                 <div class="membertext">Max Mustermann
-                  <br>Dude</div>
+                  <br>Aufgabe</div>
               </div>
               <div class="fmitglied">
                 <div class="membertext">Max Mustermann
-                  <br>Dude</div>
+                  <br>Aufgabe</div>
               </div>
             </div>
           </div>
         </div>
+        <!-- rechter Pfeilbutton -->
         <div class="col arrow">
           <input type="image" id="right-button" class="leftArrow" src="Images/Ueberuns/arrowright.png">
         </div>
       </div>
     </div>
   </div>
+  <!-- Fördernde Mitglieder Ende -->
 
+  <!-- Slogan der Band als Überschrift verwendet, extra Anpassungen der "Ecken" -->
   <div class="container-fluid black-content">
     <div class="container-fluid whiteline"> </div>
     <div class="container-fluid oneband">
@@ -443,11 +472,12 @@
       <div class="linkeecke"></div>
     </div>
 
-    <!-- footer erstmal kopiert -->
+    <!-- Footerbereich -->
     <footer>
       <div class="py-5 footer">
         <div class="container-fluid">
           <div class="row">
+            <!-- Überschrift für die Social Media Auftritte -->
             <div class="col-xl get__social">
               GET SOCIAL
             </div>
@@ -455,6 +485,7 @@
           <div class="row social__row">
             <div class="col social__channels">
               <p>
+                <!-- Diverse Icons von Font Awesome -->
                 <a href="#">
                   <i class="fa fa-facebook-official" style="font-size:36px"></i>
                 </a>
@@ -466,8 +497,8 @@
                 </a>
               </p>
             </div>
-          </div>
-
+          </div> 
+          <!-- Container zur "Erreichbarkeit" der Drummerholics, Telefon und E-Mail -->
           <div class="row footer__contact">
             <div class="p-3 col mobile-no-padding">
               <p class="justify-content-center d-flex">
@@ -479,10 +510,12 @@
                   <i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i>anfrage@thedrummerholics.de</a>
               </p>
             </div>
+            <!-- Rechtliches, Verlinkung zu Impressum und Kontakt (nicht implementierte Seiten, daher keine Linkziel) -->
             <div class="p-3 col impressumkontakt">
               <p class="d-flex justify-content-center">
                 <a class="footer__buttons" href="#">Impressum | Kontakt</a>
               </p>
+              <!-- Copyright Erwähnung -->
               <p class="d-flex justify-content-center copyright">
                 © Copyright 2018 The Drummerholics</p>
             </div>
@@ -490,10 +523,7 @@
         </div>
       </div>
     </footer>
-
-
-
   </div>
-</body>
 
+</body>
 </html>

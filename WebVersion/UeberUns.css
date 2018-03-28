@@ -632,6 +632,8 @@ html, body {
   padding-bottom: 0 !important;
 }
 
+/* WICHTIG: Hier beginn der Desktop Variante. Zwischengrößen nicht beachtet, da nicht gefordert. :) */
+
 @media only screen and (min-width: 767.98px) {
   .foerdernde-mitglieder {
     width: 910px !important;
